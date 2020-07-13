@@ -12,6 +12,7 @@ const Header = () => {
           return (
             <Link href={route} key={route}>
               <a
+              
                 className={`mr-4 text-white ${
                   router.pathname === route ? 'font-bold' : ''
                 }`}
