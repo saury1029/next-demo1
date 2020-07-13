@@ -12,14 +12,13 @@ const Header = () => {
           return (
             <Link href={route} key={route}>
               <a
-              
                 className={`mr-4 text-white ${
                   router.pathname === route ? 'font-bold' : ''
                 }`}
               >
-                <span className="pr-4 capitalize">
+                <div className="inline pr-4 capitalize">
                   {route === '/' ? 'home' : route.slice(1)}
-                </span>
+                </div>
               </a>
             </Link>
           );

@@ -1,6 +1,4 @@
-import Head from 'next/head';
 import Link from 'next/link';
-import Header from '../components/header';
 import { fetchPosts } from '../apis';
 
 export default function Home({ posts }) {
