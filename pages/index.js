@@ -6,7 +6,12 @@ export default function Home({ posts }) {
     <>
       <div className="container px-4">
         {posts.map((post) => (
-          <Link href={`/posts/${post.id}`} key={post.id}>
+          <Link
+            href={`/posts/?id=${post.id}`}
+            key={post.id}
+            as={`/posts/${post.id}`}
+            prefetch
+          >
             <a>
               <div className="py-6 border-b">
                 <h1 className="text-3xl font-bold leading-none mb-4">
