@@ -7,7 +7,7 @@ export default function Home({ posts }) {
       <div className="container px-4">
         {posts.map((post) => (
           <Link
-            href={`/posts/?id=${post.id}`}
+            href={`/?id=${post.id}`}
             key={post.id}
             as={`/posts/${post.id}`}
             prefetch
